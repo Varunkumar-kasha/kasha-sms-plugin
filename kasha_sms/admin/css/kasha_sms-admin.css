@@ -1,0 +1,137 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ul.kasha_tabs
+{
+  list-style:none;
+  margin:0;
+  padding:0
+}
+ul.kasha_tabs li
+{
+  display:inline-block;
+  padding:5px 8px;
+  margin-bottom:-1px;
+  border:solid 1px #ccc;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  background:#f1f1f1
+}
+ul.kasha_tabs li a
+{
+	text-decoration: none;
+}
+
+/* the margin-bottom makes the tab and kasha_sms_container borders overlap */
+ul.kasha_tabs li.kasha_tab_active
+{
+  border-bottom:solid 1px #fff;
+  background:#fff
+}
+#kasha_sms_container
+{
+  padding:20px;
+  border:solid 1px #ccc;
+  background:#fff
+}
+#kasha_sms_container section
+{
+  display:none
+}
+#kasha_sms_container section:first-child
+{
+  display:block
+}
+/* showing the first section by default */
+
+
+
+.kasha_collapsible {
+  background-color: #53beac;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.kasha_active, .kasha_collapsible:hover {
+  background-color: #555;
+}
+
+.kasha_content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.kasha_content table th , table td{
+    text-align: center;
+}
+
+.kasha_content table tr:nth-child(even){
+    background-color: #e4e3e3
+}
+
+.kasha_content th {
+  background: #53beac;
+  color: #fff;
+  padding: 10px;
+}
+
+.pagination {
+  margin: 0;
+}
+
+.pagination li:hover{
+    cursor: pointer;
+}
+
+.pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #ec407e;
+    border-color: #ec407e;
+}
+
+.header_wrap {
+  padding:30px 0;
+}
+.num_rows {
+  width: 20%;
+  float:left;
+}
+.tb_search{
+  width: 20%;
+  float:right;
+}
+.pagination-container {
+  width: 70%;
+  float:left;
+}
+
+.rows_count {
+  width: 20%;
+  float:right;
+  text-align:right;
+  color: #999;
+}
